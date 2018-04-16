@@ -18,6 +18,7 @@
         android:text="Regístrate o inicia sesión con tu email"
         android:textSize="17dp"
         android:textStyle="italic|bold"
+        android:textColor="#FFFFFF"
         />
     <LinearLayout
         android:layout_marginTop="20dp"
