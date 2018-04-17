@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.programacion3.pixies.app.RegisterActivity"
+    android:backgroundTint="#B1BCBE"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_gravity="center"
+        android:src="@drawable/andys_blanco"
+        android:layout_width="140dp"
+        android:layout_height="160dp" />
+    <LinearLayout
+        android:padding="5dp"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#B1BCBE"
+        android:layout_gravity="center"
+        >
+        <EditText
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="NOMBRE COMPLETO"/>
+        <EditText
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="NÚMERO DE TELÉFONO"/>
+        <EditText
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="DIRECCIÓN"/>
+        <EditText
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="EMAIL"/>
+        <EditText
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="CONTRASEÑA"/>
+    </LinearLayout>
+    <Button
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="REGÍSTRATE"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:textSize="25dp"
+        android:backgroundTint="#EE1D1D"
+        android:id="@+id/registrarse_2"
+        />
+
+</LinearLayout>

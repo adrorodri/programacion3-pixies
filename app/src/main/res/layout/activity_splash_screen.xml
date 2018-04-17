@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.programacion3.pixies.app.SplashScreen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#EE1D1D"
+    android:layout_gravity="center"
+    >
+    <ImageView
+        android:layout_marginTop="40dp"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/andys_logo_splash"/>
+    <TextView
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="PIXIES"
+        android:textSize="40dp"
+        android:textColor="#000000"
+        android:textStyle="bold"/>
+    <TextView
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Maria Emilia Aguilar Rivero"
+        android:textSize="20dp"
+        android:textColor="#000000"
+        android:textStyle="bold"/>
+    <TextView
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mateo Altamirano Vega"
+        android:textSize="20dp"
+        android:textColor="#000000"
+        android:textStyle="bold"/>
+    <TextView
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Renato Rodriguez"
+        android:textSize="20dp"
+        android:textColor="#000000"
+        android:textStyle="bold"/>
+    <TextView
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Andres Vargas Dorado"
+        android:textSize="20dp"
+        android:textColor="#000000"
+        android:textStyle="bold"/>
+
+</LinearLayout>
