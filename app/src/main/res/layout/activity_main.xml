@@ -16,7 +16,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Regístrate o inicia sesión con tu email"
-        android:textSize="17dp"
+        android:textSize="17sp"
         android:textStyle="italic|bold"
         android:textColor="#FFFFFF"
         />
@@ -25,7 +25,7 @@
         android:layout_gravity="center"
         android:layout_width="250dp"
         android:layout_height="350dp"
-        android:background="@drawable/layout_bg"
+        android:background="@drawable/layout_bordes_1"
         android:orientation="vertical"
 
         >
@@ -40,7 +40,7 @@
             android:layout_width="250dp"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:background="#B1BCBE">
+            android:background="#FFFFFF">
             <EditText
                 android:layout_marginStart="10dp"
                 android:layout_marginEnd="10dp"
