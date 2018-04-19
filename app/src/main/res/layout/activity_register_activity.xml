@@ -28,28 +28,32 @@
             android:layout_marginEnd="10dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="NOMBRE COMPLETO"/>
+            android:hint="NOMBRE COMPLETO"
+            />
         <EditText
             android:layout_marginTop="10dp"
             android:layout_marginStart="10dp"
             android:layout_marginEnd="10dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="NÚMERO DE TELÉFONO"/>
+            android:hint="NÚMERO DE TELÉFONO"
+            android:singleLine="true"/>
         <EditText
             android:layout_marginTop="10dp"
             android:layout_marginStart="10dp"
             android:layout_marginEnd="10dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="DIRECCIÓN"/>
+            android:hint="DIRECCIÓN"
+            android:singleLine="true"/>
         <EditText
             android:layout_marginTop="10dp"
             android:layout_marginStart="10dp"
             android:layout_marginEnd="10dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="EMAIL"/>
+            android:hint="EMAIL"
+            android:singleLine="true"/>
         <EditText
             android:layout_marginTop="10dp"
             android:layout_marginBottom="10dp"
@@ -57,21 +61,21 @@
             android:layout_marginEnd="10dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="CONTRASEÑA"/>
+            android:hint="CONTRASEÑA"
+            android:singleLine="true"/>
     </LinearLayout>
     <Button
-        android:layout_marginTop="10dp"
-        android:layout_marginStart="30dp"
-        android:layout_marginEnd="30dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginEnd="26dp"
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:text="REGÍSTRATE"
         android:textStyle="bold"
-        android:textColor="#000000"
+        android:textColor="#ffffff"
         android:textSize="25dp"
         android:background="@drawable/layout_boton_redondeado"
         android:backgroundTint="#EE1D1D"
-        android:id="@+id/registrarse_2"
-        />
+        android:id="@+id/registrarse_2"/>
 
 </LinearLayout>
