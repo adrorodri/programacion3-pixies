@@ -50,7 +50,6 @@
                     android:orientation="horizontal"
                     android:weightSum="3">
                     <LinearLayout
-                        android:background="a"
                         android:gravity="center"
                         android:orientation="vertical"
                         android:layout_width="0dp"
@@ -138,7 +137,7 @@
                     android:src="@drawable/gloria" />
 
                 <ImageView
-                    android:layout_width="186dp"
+                    android:layout_width="186sp"
                     android:layout_height="match_parent"
                     android:src="@drawable/papitas" />
             </LinearLayout>
