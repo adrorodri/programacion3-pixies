@@ -133,8 +133,8 @@
                 android:layout_height="wrap_content">
 
                 <ImageView
-                    android:layout_width="195dp"
-                    android:layout_height="146dp"
+                    android:layout_width="195sp"
+                    android:layout_height="146sp"
                     android:src="@drawable/gloria" />
 
                 <ImageView
