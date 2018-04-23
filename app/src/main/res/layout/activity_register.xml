@@ -76,6 +76,7 @@
         android:textSize="25sp"
         android:background="@drawable/layout_boton_redondeado"
         android:backgroundTint="#EE1D1D"
-        android:id="@+id/registrarse_2"/>
+        android:onClick="clickButton"
+        android:id="@+id/registrarse2"/>
 
 </LinearLayout>
