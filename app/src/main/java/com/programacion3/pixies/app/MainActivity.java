@@ -7,19 +7,28 @@ import android.view.View;
 import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
-    private Button Registrarse_1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-        Registrarse_1 = findViewById(R.id.registrarse_1);
-        Registrarse_1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, RegisterActivity.class);
-                startActivity(intent);
+       super.onCreate(savedInstanceState);
+       setContentView(R.layout.activity_main);
+    }
+
+
+    public void clickButton(View view) {
+        Intent intent;
+
+        switch (view.getId()) {
+            case R.id.entrar:{
+                intent = new Intent(this, PerfilActivity.class);
+                break;
             }
-        });
+            default: {
+                intent = new Intent(this, MainActivity.class);
+                break;
+            }
+        }
+
+        startActivity(intent);
     }
 }

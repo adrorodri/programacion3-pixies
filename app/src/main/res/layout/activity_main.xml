@@ -71,7 +71,8 @@
             android:backgroundTint="#3b3a35"
             android:text="@string/login"
             android:textColor="#FFFFFF"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:onClick="clickButton"/>
 
         <Button
             android:id="@+id/registrarse_1"
