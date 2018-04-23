@@ -1,3 +1,21 @@
 <resources>
     <string name="app_name">App</string>
+    <string name="logo_blanco">Logo blanco</string>
+    <string name="logo_rojo">Logo rojo</string>
+    <string name="kart">Logo carrito</string>
+
+
+    <string name="login_or_register">Regístrate o inicia sesión con tu email</string>
+    <string name="login">ENTRAR</string>
+    <string name="register">REGÍSTRATE</string>
+    <string name="forgot_password">¿Olvidaste tu contraseña?</string>
+
+
+    <string name="register_NOMBRE">NOMBRE COMPLETO</string>
+    <string name="register_TELEFONO">NÚMERO DE TELÉFONO</string>
+    <string name="register_DIRECCION">DIRECCIÓN</string>
+    <string name="register_EMAIL">EMAIL</string>
+    <string name="register_CONTRASEÑA">CONTRASEÑA</string>
+
+
 </resources>

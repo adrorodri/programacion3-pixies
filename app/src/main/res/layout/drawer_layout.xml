@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorAccent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="#ffffff">
+        <ImageView
+            android:id="@+id/logoPerfil"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="20dp"
+            android:layout_alignParentStart="true"
+            android:src="@drawable/account_logo"/>
+        <TextView
+            android:id="@+id/bienvenido"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:paddingHorizontal="20dp"
+            android:layout_toRightOf="@+id/logoPerfil"
+            android:textSize="25dp"
+            android:text="Bienvenido!"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="20dp"
+            android:layout_toRightOf="@+id/logoPerfil"
+            android:layout_below="@+id/bienvenido"
+            android:textSize="15dp"
+            android:text="Entra a tu perfil"/>
+
+    </RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:textSize="20dp"
+        android:textColor="#ffffff"
+        android:text="   Productos"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:textSize="20dp"
+        android:textColor="#ffffff"
+        android:text="   Ofertas"/>
+    <TextView
+      android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:textSize="20dp"
+        android:textColor="#ffffff"
+        android:text="   Novedades"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:textSize="20dp"
+        android:textColor="#ffffff"
+        android:text="   Historial"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:textSize="20dp"
+        android:textColor="#ffffff"
+        android:text="   Presupuesto"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:textSize="20dp"
+        android:textColor="#ffffff"
+        android:text="   Configuración"/>
+</LinearLayout>

@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -9,6 +8,7 @@
     android:orientation="vertical">
 
     <ImageView
+        android:contentDescription="@string/logo_blanco"
         android:layout_gravity="center"
         android:src="@drawable/andys_blanco"
         android:layout_width="140dp"
@@ -28,7 +28,7 @@
             android:layout_marginEnd="10dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="NOMBRE COMPLETO"
+            android:hint="@string/register_NOMBRE"
             />
         <EditText
             android:layout_marginTop="10dp"
@@ -36,7 +36,7 @@
             android:layout_marginEnd="10dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="NÚMERO DE TELÉFONO"
+            android:hint="@string/register_TELEFONO"
             android:singleLine="true"/>
         <EditText
             android:layout_marginTop="10dp"
@@ -44,7 +44,7 @@
             android:layout_marginEnd="10dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="DIRECCIÓN"
+            android:hint="@string/register_DIRECCION"
             android:singleLine="true"/>
         <EditText
             android:layout_marginTop="10dp"
@@ -52,7 +52,7 @@
             android:layout_marginEnd="10dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="EMAIL"
+            android:hint="@string/register_EMAIL"
             android:singleLine="true"/>
         <EditText
             android:layout_marginTop="10dp"
@@ -61,7 +61,7 @@
             android:layout_marginEnd="10dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="CONTRASEÑA"
+            android:hint="@string/register_CONTRASEÑA"
             android:singleLine="true"/>
     </LinearLayout>
     <Button
@@ -70,10 +70,10 @@
         android:layout_marginEnd="26dp"
         android:layout_width="match_parent"
         android:layout_height="60dp"
-        android:text="REGÍSTRATE"
+        android:text="@string/register"
         android:textStyle="bold"
         android:textColor="#ffffff"
-        android:textSize="25dp"
+        android:textSize="25sp"
         android:background="@drawable/layout_boton_redondeado"
         android:backgroundTint="#EE1D1D"
         android:id="@+id/registrarse_2"/>
