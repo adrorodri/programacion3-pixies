@@ -16,6 +16,7 @@
     <string name="register_DIRECCION">DIRECCIÓN</string>
     <string name="register_EMAIL">EMAIL</string>
     <string name="register_CONTRASEÑA">CONTRASEÑA</string>
+    <string name="title_activity_home">Home</string>
 
 
 </resources>
