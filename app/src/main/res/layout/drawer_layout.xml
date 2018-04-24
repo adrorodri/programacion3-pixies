@@ -25,23 +25,28 @@
             android:textSize="25dp"
             android:text="Bienvenido!"/>
         <TextView
+            android:id="@+id/entrarAlPerfil"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:paddingHorizontal="20dp"
             android:layout_toRightOf="@+id/logoPerfil"
             android:layout_below="@+id/bienvenido"
             android:textSize="15dp"
+            android:onClick="clickDrawer"
             android:text="Entra a tu perfil"/>
 
     </RelativeLayout>
     <TextView
+        android:id="@+id/productos"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="16dp"
         android:textSize="20dp"
         android:textColor="#ffffff"
+        android:onClick="clickDrawer"
         android:text="   Productos"/>
     <TextView
+        android:id="@+id/ofertas"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="16dp"
@@ -49,13 +54,15 @@
         android:textColor="#ffffff"
         android:text="   Ofertas"/>
     <TextView
-      android:layout_width="match_parent"
+        android:id="@+id/novedades"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="16dp"
         android:textSize="20dp"
         android:textColor="#ffffff"
         android:text="   Novedades"/>
     <TextView
+        android:id="@+id/historial"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="16dp"
@@ -63,6 +70,7 @@
         android:textColor="#ffffff"
         android:text="   Historial"/>
     <TextView
+        android:id="@+id/presupuesto"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="16dp"
@@ -70,6 +78,7 @@
         android:textColor="#ffffff"
         android:text="   Presupuesto"/>
     <TextView
+        android:id="@+id/configuracion"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="16dp"
