@@ -5,13 +5,24 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
+
+    EditText editTextEmail;
+    EditText editTextPassword;
+    String emailValue;
+    String passwordValue;
+    String[] validEmail = {"pixies@gmail.com"};
+    String[] validPassword = {"123456"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
        super.onCreate(savedInstanceState);
        setContentView(R.layout.activity_main);
+        editTextEmail = findViewById(R.id.editTextEmail);
+        editTextPassword = findViewById(R.id.editTextPassword);
     }
 
 
@@ -20,15 +31,33 @@ public class MainActivity extends AppCompatActivity {
 
         switch (view.getId()) {
             case R.id.entrar:{
-                intent = new Intent(this, PerfilActivity.class);
+                login(view);
                 break;
             }
-            default: {
-                intent = new Intent(this, MainActivity.class);
+            case R.id.registrarse:{
+                intent = new Intent(this, RegisterActivity.class);
+                startActivity(intent);
                 break;
+            }
+
+        }
+
+    }
+
+    public void login(View view) {
+        // Get the new values from the Edit Text
+        emailValue = String.valueOf(editTextEmail.getText());
+        passwordValue = String.valueOf(editTextPassword.getText());
+
+        for(int i = 0; i < validEmail.length ; i++) {
+            if (emailValue.equals(validEmail[i]) && passwordValue.equals(validPassword[i])) {
+                // Open new Activity (SecondActivity.class)
+                Intent intent = new Intent(this, PerfilActivity.class);
+                startActivity(intent);
+                return;
             }
         }
 
-        startActivity(intent);
+        Toast.makeText(this, "Email o contraseña incorrectos!", Toast.LENGTH_SHORT).show();
     }
 }
