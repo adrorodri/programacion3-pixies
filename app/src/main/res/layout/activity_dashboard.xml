@@ -56,7 +56,7 @@
                         android:layout_width="190dp"
                         android:layout_height="190dp"
                         android:layout_gravity="start"
-                        android:src="@drawable/alcancia">
+                        android:src="@drawable/alcancia3">
 
                     </ImageView>
 
@@ -64,7 +64,7 @@
                         android:layout_width="190dp"
                         android:layout_height="190dp"
                         android:layout_gravity="end"
-                        android:src="@drawable/alcanciados">
+                        android:src="@drawable/alcancia4">
 
                     </ImageView>
                 </GridLayout>
@@ -75,7 +75,7 @@
                         android:layout_width="190dp"
                         android:layout_height="190dp"
                         android:layout_gravity="start"
-                        android:src="@drawable/alcancia">
+                        android:src="@drawable/alcancia5">
 
                     </ImageView>
 
@@ -83,7 +83,7 @@
                         android:layout_width="190dp"
                         android:layout_height="190dp"
                         android:layout_gravity="end"
-                        android:src="@drawable/alcanciados">
+                        android:src="@drawable/alcancia6">
 
                     </ImageView>
                 </GridLayout>
