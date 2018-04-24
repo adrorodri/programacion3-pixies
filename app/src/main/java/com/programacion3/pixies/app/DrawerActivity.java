@@ -22,7 +22,12 @@ public class DrawerActivity extends AppCompatActivity {
                 break;
             }
             case R.id.productos:{
-                intent = new Intent(this, MainActivity.class);
+                intent = new Intent(this, ProductosActivity.class);
+                startActivity(intent);
+                break;
+            }
+            case R.id.configuracion:{
+                intent = new Intent(this, ConfiguracionActivity.class);
                 startActivity(intent);
                 break;
             }

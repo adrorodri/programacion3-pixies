@@ -52,6 +52,7 @@
         android:padding="16dp"
         android:textSize="20dp"
         android:textColor="#ffffff"
+        android:onClick="clickDrawer"
         android:text="   Ofertas"/>
     <TextView
         android:id="@+id/novedades"
@@ -60,6 +61,7 @@
         android:padding="16dp"
         android:textSize="20dp"
         android:textColor="#ffffff"
+        android:onClick="clickDrawer"
         android:text="   Novedades"/>
     <TextView
         android:id="@+id/historial"
@@ -68,6 +70,7 @@
         android:padding="16dp"
         android:textSize="20dp"
         android:textColor="#ffffff"
+        android:onClick="clickDrawer"
         android:text="   Historial"/>
     <TextView
         android:id="@+id/presupuesto"
@@ -76,6 +79,7 @@
         android:padding="16dp"
         android:textSize="20dp"
         android:textColor="#ffffff"
+        android:onClick="clickDrawer"
         android:text="   Presupuesto"/>
     <TextView
         android:id="@+id/configuracion"
@@ -84,5 +88,6 @@
         android:padding="16dp"
         android:textSize="20dp"
         android:textColor="#ffffff"
+        android:onClick="clickDrawer"
         android:text="   Configuración"/>
 </LinearLayout>
