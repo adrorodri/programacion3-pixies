@@ -4,7 +4,6 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
@@ -52,7 +51,7 @@ public class MainActivity extends AppCompatActivity {
         for(int i = 0; i < validEmail.length ; i++) {
             if (emailValue.equals(validEmail[i]) && passwordValue.equals(validPassword[i])) {
                 // Open new Activity (SecondActivity.class)
-                Intent intent = new Intent(this, PerfilActivity.class);
+                Intent intent = new Intent(this, DashboardActivity.class);
                 startActivity(intent);
                 return;
             }

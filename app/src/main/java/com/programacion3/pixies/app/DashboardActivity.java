@@ -3,7 +3,7 @@ package com.programacion3.pixies.app;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class dashboard extends AppCompatActivity {
+public class DashboardActivity extends DrawerActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
