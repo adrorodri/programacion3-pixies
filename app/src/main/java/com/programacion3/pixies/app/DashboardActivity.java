@@ -1,14 +1,10 @@
 package com.programacion3.pixies.app;
 
-import android.content.DialogInterface;
 import android.support.v7.app.AlertDialog;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
-import android.widget.TextView;
-import android.widget.Toast;
 
 public class DashboardActivity extends DrawerActivity {
     ImageView alcancia;
@@ -27,9 +23,7 @@ public class DashboardActivity extends DrawerActivity {
 
             @Override
             public boolean onLongClick(View v) {
-            //Toast.makeText(DashboardActivity.this,"longclick",Toast.LENGTH_LONG).show();
                 View layout = getLayoutInflater().inflate(R.layout.activity_custom_dialog, null);
-
                 Button button = layout.findViewById(R.id.comprarCustomDialog);
                 button.setText("COMPRAR");
                 AlertDialog.Builder builder = new AlertDialog.Builder(DashboardActivity.this);
@@ -47,9 +41,7 @@ public class DashboardActivity extends DrawerActivity {
 
             @Override
             public boolean onLongClick(View v) {
-                //Toast.makeText(DashboardActivity.this,"longclick",Toast.LENGTH_LONG).show();
                 View layout = getLayoutInflater().inflate(R.layout.activity_custom_dialog, null);
-
                 Button button = layout.findViewById(R.id.comprarCustomDialog);
                 button.setText("COMPRAR");
                 AlertDialog.Builder builder = new AlertDialog.Builder(DashboardActivity.this);
@@ -67,9 +59,7 @@ public class DashboardActivity extends DrawerActivity {
 
             @Override
             public boolean onLongClick(View v) {
-                //Toast.makeText(DashboardActivity.this,"longclick",Toast.LENGTH_LONG).show();
                 View layout = getLayoutInflater().inflate(R.layout.activity_custom_dialog, null);
-
                 Button button = layout.findViewById(R.id.comprarCustomDialog);
                 button.setText("COMPRAR");
                 AlertDialog.Builder builder = new AlertDialog.Builder(DashboardActivity.this);
@@ -87,9 +77,7 @@ public class DashboardActivity extends DrawerActivity {
 
             @Override
             public boolean onLongClick(View v) {
-                //Toast.makeText(DashboardActivity.this,"longclick",Toast.LENGTH_LONG).show();
                 View layout = getLayoutInflater().inflate(R.layout.activity_custom_dialog, null);
-
                 Button button = layout.findViewById(R.id.comprarCustomDialog);
                 button.setText("COMPRAR");
                 AlertDialog.Builder builder = new AlertDialog.Builder(DashboardActivity.this);
@@ -107,9 +95,7 @@ public class DashboardActivity extends DrawerActivity {
 
             @Override
             public boolean onLongClick(View v) {
-                //Toast.makeText(DashboardActivity.this,"longclick",Toast.LENGTH_LONG).show();
                 View layout = getLayoutInflater().inflate(R.layout.activity_custom_dialog, null);
-
                 Button button = layout.findViewById(R.id.comprarCustomDialog);
                 button.setText("COMPRAR");
                 AlertDialog.Builder builder = new AlertDialog.Builder(DashboardActivity.this);
@@ -127,9 +113,7 @@ public class DashboardActivity extends DrawerActivity {
 
             @Override
             public boolean onLongClick(View v) {
-                //Toast.makeText(DashboardActivity.this,"longclick",Toast.LENGTH_LONG).show();
                 View layout = getLayoutInflater().inflate(R.layout.activity_custom_dialog, null);
-
                 Button button = layout.findViewById(R.id.comprarCustomDialog);
                 button.setText("COMPRAR");
                 AlertDialog.Builder builder = new AlertDialog.Builder(DashboardActivity.this);

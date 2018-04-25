@@ -47,13 +47,11 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void login(View view) {
-        // Get the new values from the Edit Text
         emailValue = String.valueOf(editTextEmail.getText());
         passwordValue = String.valueOf(editTextPassword.getText());
 
         for(int i = 0; i < validEmail.length ; i++) {
             if (emailValue.equals(validEmail[i]) && passwordValue.equals(validPassword[i])) {
-                // Open new Activity (SecondActivity.class)
                 Intent intent = new Intent(this, DashboardActivity.class);
                 startActivity(intent);
                 return;

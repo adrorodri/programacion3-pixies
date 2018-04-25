@@ -40,7 +40,6 @@ public class RegisterActivity extends AppCompatActivity {
         registrarse(view);
     }
     public void registrarse(View view) {
-        // Get the new values from the Edit Text
         emailValue = String.valueOf(editTextEmail.getText());
         contrasenaValue = String.valueOf(editTextContrasena.getText());
         numeroTelefonoValue = String.valueOf(editTextNumeroTelefono.getText());
@@ -51,7 +50,6 @@ public class RegisterActivity extends AppCompatActivity {
             if (emailValue.equals(validEmail[i]) && contrasenaValue.equals(validContrasena[i])
                     &&direccionValue.equals(validDireccion[i])&&numeroTelefonoValue.equals(validNumeroTelefono[i])
                     &&nombreCompletoValue.equals(validNombreCompleto[i])) {
-                // Open new Activity (SecondActivity.class)
                 Intent intent = new Intent(this, MainActivity.class);
                 startActivity(intent);
                 return;
