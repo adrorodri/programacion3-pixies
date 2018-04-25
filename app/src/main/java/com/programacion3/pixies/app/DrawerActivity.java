@@ -16,6 +16,17 @@ public class DrawerActivity extends AppCompatActivity {
         Intent intent;
 
         switch (view.getId()) {
+            case R.id.inicio:{
+                intent = new Intent(this, DashboardActivity.class);
+                startActivity(intent);
+                break;
+            }
+            case R.id.presupuesto:{
+                intent = new Intent(this, PresupuestoActivity.class);
+                startActivity(intent);
+                break;
+            }
+
             case R.id.entrarAlPerfil:{
                 intent = new Intent(this, PerfilActivity.class);
                 startActivity(intent);

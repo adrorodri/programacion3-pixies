@@ -23,7 +23,10 @@ public class MainActivity extends AppCompatActivity {
         editTextEmail = findViewById(R.id.editTextEmail);
         editTextPassword = findViewById(R.id.editTextPassword);
     }
+    @Override
+    public void onBackPressed() {
 
+    }
 
     public void clickButton(View view) {
         Intent intent;

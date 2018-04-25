@@ -12,5 +12,9 @@ public class PerfilActivity extends DrawerActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_perfil);
     }
+    @Override
+    public void onBackPressed() {
+
+    }
 
 }

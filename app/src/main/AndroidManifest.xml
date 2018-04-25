@@ -9,9 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_foreground"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity"></activity>
-        <activity android:name=".DashboardActivity"/>
-        <activity android:name=".ProductosActivity"/>
+        <activity android:name=".MainActivity" />
+        <activity android:name=".PresupuestoActivity"/>
+        <activity android:name=".DashboardActivity" />
+        <activity android:name=".ProductosActivity" />
         <activity android:name=".ConfiguracionActivity" />
         <activity android:name=".DrawerActivity" />
         <activity android:name=".PerfilActivity" />
@@ -23,7 +24,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
+        <activity android:name=".CustomDialog"></activity>
     </application>
 
 </manifest>

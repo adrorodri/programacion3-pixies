@@ -1,14 +1,13 @@
 package com.programacion3.pixies.app;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class ProductosActivity extends DrawerActivity {
+public class PresupuestoActivity extends DrawerActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_productos);
+        setContentView(R.layout.activity_presupuesto);
     }
     @Override
     public void onBackPressed() {
