@@ -1,5 +1,6 @@
 package com.programacion3.pixies.app;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -17,7 +18,7 @@ public class DrawerActivity extends AppCompatActivity {
 
         switch (view.getId()) {
             case R.id.inicio:{
-                intent = new Intent(this, DashboardActivity.class);
+                intent = new Intent(this, BienvenidosActivity.class);
                 startActivity(intent);
                 break;
             }

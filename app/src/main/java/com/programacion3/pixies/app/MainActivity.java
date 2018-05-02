@@ -1,5 +1,6 @@
 package com.programacion3.pixies.app;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -52,7 +53,7 @@ public class MainActivity extends AppCompatActivity {
 
         for(int i = 0; i < validEmail.length ; i++) {
             if (emailValue.equals(validEmail[i]) && passwordValue.equals(validPassword[i])) {
-                Intent intent = new Intent(this, DashboardActivity.class);
+                Intent intent = new Intent(this, BienvenidosActivity.class);
                 startActivity(intent);
                 return;
             }
