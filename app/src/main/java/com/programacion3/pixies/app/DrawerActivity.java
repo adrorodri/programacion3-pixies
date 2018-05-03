@@ -1,11 +1,9 @@
 package com.programacion3.pixies.app;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 
 public class DrawerActivity extends AppCompatActivity {
     @Override
@@ -34,7 +32,7 @@ public class DrawerActivity extends AppCompatActivity {
                 break;
             }
             case R.id.productos:{
-                intent = new Intent(this, ProductosActivity.class);
+                intent = new Intent(this, CategoriasActivity.class);
                 startActivity(intent);
                 break;
             }
