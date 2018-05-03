@@ -41,7 +41,6 @@ public class ProductosAdapter extends RecyclerView.Adapter<ProductosAdapter.MyVi
 
     @Override
     public void onBindViewHolder(@NonNull MyViewHolder holder, int position) {
-        holder.nombreProducto.setText(productList.get(position).getDescription());
         holder.imagenProducto.setImageResource(productList.get(position).getImage());
         holder.buttonMas.setOnLongClickListener(new View.OnLongClickListener() {
             @Override
@@ -64,7 +63,6 @@ public class ProductosAdapter extends RecyclerView.Adapter<ProductosAdapter.MyVi
     }
 
     public static class MyViewHolder extends RecyclerView.ViewHolder{
-        TextView nombreProducto;
         ImageView imagenProducto;
         CardView cardView;
         Button buttonMas;
@@ -72,7 +70,6 @@ public class ProductosAdapter extends RecyclerView.Adapter<ProductosAdapter.MyVi
         public MyViewHolder(View itemView){
             super(itemView);
 
-            nombreProducto = (TextView) itemView.findViewById(R.id.nombre_producto_id);
             imagenProducto = (ImageView) itemView.findViewById(R.id.imagen_producto_id);
             cardView = (CardView) itemView.findViewById(R.id.cardview);
             buttonMas=(Button)itemView.findViewById(R.id.buttonMas);
