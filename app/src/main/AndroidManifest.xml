@@ -10,7 +10,11 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".MainActivity" />
-        <activity android:name=".ProductosActivity" />
+        <activity android:name=".PresupuestoActivity"/>
+        <activity android:name=".BienvenidosActivity"/>
+        <activity android:name=".CategoriasActivity" />
+        <activity android:name=".CerealesActivity"/>
+        <activity android:name=".CustomDialog"/>
         <activity android:name=".ConfiguracionActivity" />
         <activity android:name=".DrawerActivity" />
         <activity android:name=".PerfilActivity" />
@@ -22,7 +26,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".presupuesto"></activity>
     </application>
 
 </manifest>

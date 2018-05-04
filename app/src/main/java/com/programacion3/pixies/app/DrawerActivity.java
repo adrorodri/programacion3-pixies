@@ -4,7 +4,6 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 
 public class DrawerActivity extends AppCompatActivity {
     @Override
@@ -17,7 +16,7 @@ public class DrawerActivity extends AppCompatActivity {
 
         switch (view.getId()) {
             case R.id.inicio:{
-                intent = new Intent(this, DashboardActivity.class);
+                intent = new Intent(this, BienvenidosActivity.class);
                 startActivity(intent);
                 break;
             }
@@ -33,7 +32,7 @@ public class DrawerActivity extends AppCompatActivity {
                 break;
             }
             case R.id.productos:{
-                intent = new Intent(this, ProductosActivity.class);
+                intent = new Intent(this, CategoriasActivity.class);
                 startActivity(intent);
                 break;
             }
