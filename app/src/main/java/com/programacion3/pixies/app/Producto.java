@@ -1,50 +1,16 @@
 package com.programacion3.pixies.app;
 
 public class Producto {
-    private int id;
-    private double price;
-    private int quantity;
-    private String description;
     private int image;
+    private int cantidad;
+    private int precio;
+    private String nombre;
 
-    public Producto(int id, double price, int quantity, String description, int image) {
-        this.id = id;
-        this.price = price;
-        this.quantity = quantity;
-        this.description = description;
+    public Producto(int image, int cantidad, int precio, String nombre) {
         this.image = image;
-    }
-
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
-
-    public double getPrice() {
-        return price;
-    }
-
-    public void setPrice(double price) {
-        this.price = price;
-    }
-
-    public int getQuantity() {
-        return quantity;
-    }
-
-    public void setQuantity(int quantity) {
-        this.quantity = quantity;
-    }
-
-    public String getDescription() {
-        return description;
-    }
-
-    public void setDescription(String description) {
-        this.description = description;
+        this.cantidad = cantidad;
+        this.precio = precio;
+        this.nombre = nombre;
     }
 
     public int getImage() {
@@ -53,5 +19,29 @@ public class Producto {
 
     public void setImage(int image) {
         this.image = image;
+    }
+
+    public int getCantidad() {
+        return cantidad;
+    }
+
+    public void setCantidad(int cantidad) {
+        this.cantidad = cantidad;
+    }
+
+    public int getPrecio() {
+        return precio;
+    }
+
+    public void setPrecio(int precio) {
+        this.precio = precio;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
     }
 }

@@ -2,7 +2,10 @@ package com.programacion3.pixies.app;
 
 import android.os.Bundle;
 import android.support.v7.widget.GridLayoutManager;
+import android.support.v7.widget.LinearLayoutCompat;
+import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.text.Layout;
 
 import java.util.LinkedList;
 import java.util.List;
@@ -13,28 +16,30 @@ import java.util.List;
 
 public class CerealesActivity extends DrawerActivity {
 
-    List<Producto> productoList = new LinkedList<>();
+    List<Producto> productoList;
+    RecyclerView recyclerView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cereales);
+        recyclerView = findViewById(R.id.recycler_view_cereales);
 
-        productoList.add(new Producto(1,20,10,"producto1",R.drawable.alcancia));
-        productoList.add(new Producto(1,20,10,"producto2",R.drawable.alcancia2));
-        productoList.add(new Producto(1,20,10,"producto3",R.drawable.alcancia3));
-        productoList.add(new Producto(1,20,10,"producto4",R.drawable.alcancia4));
-        productoList.add(new Producto(1,20,10,"producto5",R.drawable.alcancia5));
-        productoList.add(new Producto(1,20,10,"producto6",R.drawable.alcancia6));
-        productoList.add(new Producto(1,20,10,"producto7",R.drawable.alcancia));
-        productoList.add(new Producto(1,20,10,"producto8",R.drawable.alcancia2));
-        productoList.add(new Producto(1,20,10,"producto9",R.drawable.alcancia3));
-        productoList.add(new Producto(1,20,10,"producto10",R.drawable.alcancia4));
-        productoList.add(new Producto(1,20,10,"producto11",R.drawable.alcancia5));
-        productoList.add(new Producto(1,20,10,"producto12",R.drawable.alcancia6));
-        RecyclerView recyclerView = (RecyclerView) findViewById(R.id.cerealesRecyclerView);
+        productoList = new LinkedList<>();
+        productoList.add(new Producto(R.drawable.andys_blanco,10,20,"cereal_1"));
+        productoList.add(new Producto(R.drawable.andys_blanco,10,20,"cereal_2"));
+        productoList.add(new Producto(R.drawable.andys_blanco,10,20,"cereal_3"));
+        productoList.add(new Producto(R.drawable.andys_blanco,10,20,"cereal_4"));
+        productoList.add(new Producto(R.drawable.andys_blanco,10,20,"cereal_5"));
+        productoList.add(new Producto(R.drawable.andys_blanco,10,20,"cereal_6"));
+
+
+        LinearLayoutManager layoutManager = new LinearLayoutManager(this);
+        RecyclerView.LayoutManager rvLayoutManager = layoutManager;
+
         ProductosAdapter adapter = new ProductosAdapter(this,productoList);
-        recyclerView.setLayoutManager(new GridLayoutManager(this,3));
+
+        recyclerView.setLayoutManager(rvLayoutManager);
         recyclerView.setAdapter(adapter);
     }
 

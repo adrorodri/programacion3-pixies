@@ -42,7 +42,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
 
     @Override
     public void onBindViewHolder(@NonNull MyViewHolder holder, int position) {
-        holder.nombreProducto.setText(productList.get(position).getDescription());
+        holder.nombreProducto.setText(productList.get(position).getNombre());
         holder.imagenProducto.setImageResource(productList.get(position).getImage());
         holder.cardView.setOnLongClickListener(new View.OnLongClickListener() {
             @Override
