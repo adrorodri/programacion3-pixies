@@ -19,12 +19,23 @@ public class MainActivity extends AppCompatActivity {
     String[] validEmail ={"pixies@gmail.com"};
     String[] validPassword={"123456"};
 
+    SharedPreferencesController sharedPreferencesController;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         editTextEmail = (EditText)findViewById(R.id.editTextEmail);
         editTextPassword = (EditText)findViewById(R.id.editTextPassword);
+
+        sharedPreferencesController = new SharedPreferencesController(this);
+
+        // Check if user is already logged in
+        if(sharedPreferencesController.isUserLoggedIn()) {
+            Intent intent = new Intent(this, BienvenidosActivity.class);
+            finish(); // Finish the Main Activity
+            startActivity(intent); // Start new BienvenidosActivity
+        }
 
 //        final EditText etEmail  = (EditText) findViewById(R.id.editTextEmail);
 //        final EditText etPassword = (EditText) findViewById(R.id.editTextPassword);
@@ -86,6 +97,9 @@ public class MainActivity extends AppCompatActivity {
             if (emailValue.equals(validEmail[i]) && passwordValue.equals(validPassword[i])) {
                 Intent intent = new Intent(this, BienvenidosActivity.class);
                 startActivity(intent);
+
+                sharedPreferencesController.saveLoggedUser(new Usuario(emailValue, passwordValue));
+
                 return;
             }
         }
