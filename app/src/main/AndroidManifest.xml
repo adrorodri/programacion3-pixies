@@ -12,9 +12,8 @@
         <activity android:name=".MainActivity" />
         <activity android:name=".PresupuestoActivity"/>
         <activity android:name=".BienvenidosActivity"/>
-        <activity android:name=".CategoriasActivity" />
         <activity android:name=".ConfiguracionActivity"/>
-        <activity android:name=".CerealesActivity"/>
+        <activity android:name=".ProductosActivity"/>
         <activity android:name=".CustomDialog"/>
         <activity android:name=".DrawerActivity" />
         <activity android:name=".PerfilActivity" />
