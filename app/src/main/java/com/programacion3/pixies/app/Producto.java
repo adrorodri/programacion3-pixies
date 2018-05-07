@@ -13,11 +13,13 @@ public class Producto {
         this.precio = precio;
         this.nombre = nombre;
     }
-    public Producto(String nombre, int precio, String categoria, int image){
+
+    public Producto(int image, int cantidad, int precio, String nombre, String categoria) {
+        this.image = image;
+        this.cantidad = cantidad;
+        this.precio = precio;
         this.nombre = nombre;
-        this.precio=precio;
         this.categoria = categoria;
-        this.image= image;
     }
 
     public int getImage() {

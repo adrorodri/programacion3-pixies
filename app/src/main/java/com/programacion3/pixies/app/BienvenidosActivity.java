@@ -27,6 +27,7 @@ public class BienvenidosActivity extends DrawerActivity{
         switch (view.getId()) {
             case R.id.cereales_button: {
                 intent = new Intent(this, ProductosActivity.class);
+                // TODO: Put intent extra
                 startActivity(intent);
                 break;
             }
