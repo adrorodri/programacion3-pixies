@@ -11,10 +11,14 @@ import android.view.View;
 
 public class BienvenidosActivity extends DrawerActivity{
 
+    DBController dbController;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_bienvenidos);
+        dbController = new DBController(this, "Productos.db", null, 1);
+
 
     }
     public void clickCategorias(View view){
