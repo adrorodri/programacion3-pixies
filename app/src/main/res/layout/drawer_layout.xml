@@ -47,24 +47,6 @@
         android:text="   Inicio"/>
 
     <TextView
-        android:id="@+id/ofertas"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:padding="16dp"
-        android:textSize="20dp"
-        android:textColor="#ffffff"
-        android:onClick="clickDrawer"
-        android:text="   Ofertas"/>
-    <TextView
-        android:id="@+id/novedades"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:padding="16dp"
-        android:textSize="20dp"
-        android:textColor="#ffffff"
-        android:onClick="clickDrawer"
-        android:text="   Novedades"/>
-    <TextView
         android:id="@+id/historial"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

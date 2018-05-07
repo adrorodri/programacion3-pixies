@@ -2,6 +2,7 @@ package com.programacion3.pixies.app;
 
 public class Producto {
     private int image;
+    private String categoria;
     private int cantidad;
     private int precio;
     private String nombre;
@@ -11,6 +12,12 @@ public class Producto {
         this.cantidad = cantidad;
         this.precio = precio;
         this.nombre = nombre;
+    }
+    public Producto(String nombre, int precio, String categoria, int image){
+        this.nombre = nombre;
+        this.precio=precio;
+        this.categoria = categoria;
+        this.image= image;
     }
 
     public int getImage() {

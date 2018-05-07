@@ -12,12 +12,15 @@ public class ConfiguracionActivity extends DrawerActivity {
     Dialog cerrarDialog;
     Button si, no;
     Intent intent;
+    SharedPreferencesController sharedPreferencesController;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_configuracion);
+
+        sharedPreferencesController = new SharedPreferencesController(this);
 
         cerrar = (TextView) findViewById(R.id.cerrarSesion);
         cerrar.setOnClickListener(new View.OnClickListener() {
@@ -33,6 +36,7 @@ public class ConfiguracionActivity extends DrawerActivity {
                 si.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
+                        sharedPreferencesController.deleteLoggedUser();
                         intent = new Intent(ConfiguracionActivity.this, MainActivity.class);
                         startActivity(intent);
                     }
