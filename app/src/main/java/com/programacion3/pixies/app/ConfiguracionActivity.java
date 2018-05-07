@@ -8,7 +8,7 @@ import android.widget.Button;
 import android.widget.TextView;
 
 public class ConfiguracionActivity extends DrawerActivity {
-    TextView cerrar;
+    TextView cerrar,deseas_cerrar;
     Dialog cerrarDialog;
     Button si, no;
     Intent intent;
@@ -25,10 +25,9 @@ public class ConfiguracionActivity extends DrawerActivity {
             public void onClick(View v) {
                 cerrarDialog = new Dialog(ConfiguracionActivity.this);
                 cerrarDialog.setContentView(R.layout.activity_custom_dialog_cerrar);
-                cerrarDialog.setTitle("asjdhlkasugd");
+                deseas_cerrar= (TextView) cerrarDialog.findViewById(R.id.deseas_cerrar_sesion);
                 si = (Button) cerrarDialog.findViewById(R.id.si);
                 no = (Button) cerrarDialog.findViewById(R.id.no);
-
                 si.setEnabled(true);
                 no.setEnabled(true);
                 si.setOnClickListener(new View.OnClickListener() {
