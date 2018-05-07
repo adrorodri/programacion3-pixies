@@ -1,5 +1,6 @@
 package com.programacion3.pixies.app;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -25,10 +26,15 @@ public class ProductosActivity extends DrawerActivity {
         dbController = new DBController(this, "Productos.db", null, 1);
 
         // TODO: Get intent extra, Category???
-
+        Intent intent = getIntent();
         recyclerView = findViewById(R.id.recycler_view_productos);
-
+        intent.getStringExtra("Cereales");
+        intent.getStringExtra("Lacteos");
+        intent.getStringExtra("Bebidas");
+        intent.getStringExtra("Panaderia");
+        intent.getStringExtra("Aseo");
         productoList = dbController.getAllProducts();
+        
 
 
 //        productoList = new LinkedList<>();

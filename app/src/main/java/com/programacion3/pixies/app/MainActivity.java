@@ -20,7 +20,6 @@ public class MainActivity extends AppCompatActivity {
     String[] validPassword={"123456"};
 
     SharedPreferencesController sharedPreferencesController;
-    DBController dbController;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,7 +29,6 @@ public class MainActivity extends AppCompatActivity {
         editTextPassword = (EditText)findViewById(R.id.editTextPassword);
 
         sharedPreferencesController = new SharedPreferencesController(this);
-        dbController = new DBController(this, "DBProductos.db", null, 1);
 
         // Check if user is already logged in
         if(sharedPreferencesController.isUserLoggedIn()) {
