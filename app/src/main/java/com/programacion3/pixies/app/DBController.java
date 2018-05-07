@@ -48,7 +48,7 @@ public class DBController extends SQLiteOpenHelper {
     // TODO: ADD FUNCTION TO GET ALL PRODUCTS BY CATEGORY
     public List<Producto> getAllProductsByCategory(String category) {
         List<Producto> productoList = new LinkedList<>();
-        Cursor cursor = getReadableDatabase().rawQuery("SELECT * FROM Productos WHERE Categoria = 'category'",null);
+        Cursor cursor = getReadableDatabase().rawQuery("SELECT * FROM Productos WHERE Categoria = '"+category+"'",null);
         while(cursor.moveToNext()){
             productoList.add(new Producto(cursor.getInt(1),cursor.getInt(2),cursor.getInt(3),cursor.getString(4), cursor.getString(5)));
         }
