@@ -54,7 +54,7 @@ public class DBController extends SQLiteOpenHelper {
         contentValues2.put("Precio",precio3);
         contentValues2.put("Nombre",nombre3);
         contentValues2.put("Categoria",categoria3);
-        
+
         db.insert("Productos", null, contentValues);
         db.insert("Productos",null,contentValues1);
         db.insert("Productos",null,contentValues2);
@@ -109,5 +109,4 @@ public class DBController extends SQLiteOpenHelper {
         }
         return productoList;
     }
-
 }
