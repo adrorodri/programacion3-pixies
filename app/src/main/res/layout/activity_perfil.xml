@@ -151,7 +151,7 @@
             <ImageView
                 android:layout_width="195sp"
                 android:layout_height="146sp"
-                android:src="@drawable/gloria" />
+                android:src="@drawable/lacteos_gloria" />
 
             <ImageView
                 android:layout_width="186sp"
