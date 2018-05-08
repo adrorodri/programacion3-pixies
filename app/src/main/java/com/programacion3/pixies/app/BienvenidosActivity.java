@@ -36,29 +36,29 @@ public class BienvenidosActivity extends DrawerActivity{
             }
             case R.id.lacteos_button: {
                 intent = new Intent(this, ProductosActivity.class);
-                String category= new String();
-                intent.putExtra(category,"Lacteos");
+                String category = "Lacteos";
+                intent.putExtra("Category",category);
                 startActivity(intent);
                 break;
             }
             case R.id.bebidas_button: {
                 intent = new Intent(this, ProductosActivity.class);
-                String category= new String();
-                intent.putExtra(category,"Bebidas");
+                String category = "Bebidas";
+                intent.putExtra("Category",category);
                 startActivity(intent);
                 break;
             }
             case R.id.panaderia_button: {
                 intent = new Intent(this, ProductosActivity.class);
-                String category= new String();
-                intent.putExtra(category,"Panaderias");
+                String category = "Panaderia";
+                intent.putExtra("Category",category);
                 startActivity(intent);
                 break;
             }
             case R.id.aseo_button: {
                 intent = new Intent(this, ProductosActivity.class);
-                String category= new String();
-                intent.putExtra(category,"Aseo");
+                String category = "Aseo";
+                intent.putExtra("Category",category);
                 startActivity(intent);
                 break;
             }
