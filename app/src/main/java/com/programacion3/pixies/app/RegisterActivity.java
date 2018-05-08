@@ -17,6 +17,12 @@ public class RegisterActivity extends AppCompatActivity {
     EditText editTextNombreCompleto;
     EditText editTextNumeroTelefono;
 
+    String newEmail;
+    String newContrasena;
+    String newDireccion;
+    String newNombreCompleto;
+    String newNumeroTelefono;
+
     String emailValue;
     String contrasenaValue;
     String direccionValue;
@@ -31,6 +37,7 @@ public class RegisterActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
         final EditText email = (EditText) findViewById(R.id.email);
@@ -38,17 +45,17 @@ public class RegisterActivity extends AppCompatActivity {
         final EditText direccion = (EditText) findViewById(R.id.direccion);
         final EditText nombreCompleto = (EditText) findViewById(R.id.nombrecompleto);
         final EditText numeroTelefono = (EditText) findViewById(R.id.numerotelefono);
-        Button btnRegister  = (Button) findViewById(R.id.entrar);
+        Button btnRegister  = (Button) findViewById(R.id.registrarse2);
 
         btnRegister.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 SharedPreferences preferences = getSharedPreferences("MYPREFS", MODE_PRIVATE);
-                String newEmail = editTextEmail.getText().toString();
-                String newContrasena = editTextContrasena.getText().toString();
-                String newDireccion = editTextDireccion.getText().toString();
-                String newNombreCompleto = editTextNombreCompleto.getText().toString();
-                String newNumeroTelefono = editTextNumeroTelefono.getText().toString();
+                newEmail = editTextEmail.getText().toString();
+                newContrasena = editTextContrasena.getText().toString();
+                newDireccion = editTextDireccion.getText().toString();
+                newNombreCompleto = editTextNombreCompleto.getText().toString();
+                newNumeroTelefono = editTextNumeroTelefono.getText().toString();
 
                 SharedPreferences.Editor editor = preferences.edit();
                 editor.putString(newEmail + newContrasena + "data", newEmail + "/n"

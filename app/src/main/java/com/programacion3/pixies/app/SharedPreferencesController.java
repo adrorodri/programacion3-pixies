@@ -15,6 +15,11 @@ public class SharedPreferencesController {
     private String SHARED_PREFERENCES_NAME = "SharedPrefs";
     private String KEY_USUARIO = "LoggedUser";
 
+    public String getUsuario(){
+            return sharedPreferences.getString(KEY_USUARIO,null);
+    }
+
+
     public SharedPreferencesController(Context context) {
         sharedPreferences = context.getSharedPreferences(SHARED_PREFERENCES_NAME, Context.MODE_PRIVATE);
     }

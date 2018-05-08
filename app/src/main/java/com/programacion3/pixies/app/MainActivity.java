@@ -36,6 +36,45 @@ public class MainActivity extends AppCompatActivity {
             finish(); // Finish the Main Activity
             startActivity(intent); // Start new BienvenidosActivity
         }
+    }
+    @Override
+    public void onBackPressed() {
+
+    }
+    public void clickButton(View view) {
+        Intent intent;
+
+        switch (view.getId()) {
+            case R.id.entrar:{
+                login(view);
+                break;
+            }
+            case R.id.registrarse:{
+                intent = new Intent(this, RegisterActivity.class);
+                startActivity(intent);
+                break;
+            }
+
+        }
+
+    }
+    public void login(View view) {
+        emailValue = String.valueOf(editTextEmail.getText());
+        passwordValue = String.valueOf(editTextPassword.getText());
+
+        for(int i = 0; i < validEmail.length ; i++) {
+            if (emailValue.equals(validEmail[i]) && passwordValue.equals(validPassword[i])) {
+                Intent intent = new Intent(this, BienvenidosActivity.class);
+                startActivity(intent);
+
+                sharedPreferencesController.saveLoggedUser(new Usuario(emailValue, passwordValue));
+
+                return;
+            }
+        }
+        Toast.makeText(this, "Email o contraseña incorrectos!", Toast.LENGTH_SHORT).show();
+    }
+}
 
 //        final EditText etEmail  = (EditText) findViewById(R.id.editTextEmail);
 //        final EditText etPassword = (EditText) findViewById(R.id.editTextPassword);
@@ -65,45 +104,3 @@ public class MainActivity extends AppCompatActivity {
 //                startActivity(registerAct);
 //            }
 //        });
-}
-    @Override
-    public void onBackPressed() {
-
-    }
-
-    public void clickButton(View view) {
-        Intent intent;
-
-        switch (view.getId()) {
-            case R.id.entrar:{
-                login(view);
-                break;
-            }
-            case R.id.registrarse:{
-                intent = new Intent(this, RegisterActivity.class);
-                startActivity(intent);
-                break;
-            }
-
-        }
-
-    }
-
-    public void login(View view) {
-        emailValue = String.valueOf(editTextEmail.getText());
-        passwordValue = String.valueOf(editTextPassword.getText());
-
-        for(int i = 0; i < validEmail.length ; i++) {
-            if (emailValue.equals(validEmail[i]) && passwordValue.equals(validPassword[i])) {
-                Intent intent = new Intent(this, BienvenidosActivity.class);
-                startActivity(intent);
-
-                sharedPreferencesController.saveLoggedUser(new Usuario(emailValue, passwordValue));
-
-                return;
-            }
-        }
-
-        Toast.makeText(this, "Email o contraseña incorrectos!", Toast.LENGTH_SHORT).show();
-    }
-}

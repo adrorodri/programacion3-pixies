@@ -20,6 +20,11 @@ public class DrawerActivity extends AppCompatActivity {
                 startActivity(intent);
                 break;
             }
+            case R.id.carrito:{
+                intent = new Intent(this, CarritoActivity.class);
+                startActivity(intent);
+                break;
+            }
             case R.id.presupuesto:{
                 intent = new Intent(this, PresupuestoActivity.class);
                 startActivity(intent);
