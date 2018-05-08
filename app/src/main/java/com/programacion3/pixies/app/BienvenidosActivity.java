@@ -24,11 +24,9 @@ public class BienvenidosActivity extends DrawerActivity{
     }
     public void clickCategorias(View view){
         Intent intent;
-
         switch (view.getId()) {
             case R.id.cereales_button: {
                 intent = new Intent(this, ProductosActivity.class);
-                // TODO: Put intent extra
                 String category = "Cereales";
                 intent.putExtra("Category",category);
                 startActivity(intent);
