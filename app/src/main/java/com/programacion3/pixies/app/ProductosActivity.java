@@ -5,7 +5,6 @@ import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 
-import java.util.LinkedList;
 import java.util.List;
 
 /**
@@ -27,14 +26,14 @@ public class ProductosActivity extends DrawerActivity {
 
         // TODO: Get intent extra, Category???
         Intent intent = getIntent();
+        String categoryRecep;
         recyclerView = findViewById(R.id.recycler_view_productos);
-        intent.getStringExtra("Cereales");
-        intent.getStringExtra("Lacteos");
-        intent.getStringExtra("Bebidas");
-        intent.getStringExtra("Panaderia");
-        intent.getStringExtra("Aseo");
+        categoryRecep = intent.getStringExtra("Category");
         productoList = dbController.getAllProducts();
-        
+
+        productoList = dbController.getAllProductsByCategory(categoryRecep);
+
+
 
 
 //        productoList = new LinkedList<>();

@@ -12,7 +12,6 @@ import java.util.Locale;
 
 
 public class BienvenidosActivity extends DrawerActivity{
-    String category;
     DBController dbController;
 
     @Override
@@ -25,36 +24,39 @@ public class BienvenidosActivity extends DrawerActivity{
     }
     public void clickCategorias(View view){
         Intent intent;
-
         switch (view.getId()) {
             case R.id.cereales_button: {
                 intent = new Intent(this, ProductosActivity.class);
-                // TODO: Put intent extra
-                intent.putExtra("Cereales",category);
+                String category = "Cereales";
+                intent.putExtra("Category",category);
                 startActivity(intent);
                 break;
             }
             case R.id.lacteos_button: {
                 intent = new Intent(this, ProductosActivity.class);
-                intent.putExtra("Lacteos",category);
+                String category = "Lacteos";
+                intent.putExtra("Category",category);
                 startActivity(intent);
                 break;
             }
             case R.id.bebidas_button: {
                 intent = new Intent(this, ProductosActivity.class);
-                intent.putExtra("Bebidas",category);
+                String category = "Bebidas";
+                intent.putExtra("Category",category);
                 startActivity(intent);
                 break;
             }
             case R.id.panaderia_button: {
                 intent = new Intent(this, ProductosActivity.class);
-                intent.putExtra("Panaderia",category);
+                String category = "Panaderia";
+                intent.putExtra("Category",category);
                 startActivity(intent);
                 break;
             }
             case R.id.aseo_button: {
                 intent = new Intent(this, ProductosActivity.class);
-                intent.putExtra("Aseo",category);
+                String category = "Aseo";
+                intent.putExtra("Category",category);
                 startActivity(intent);
                 break;
             }
