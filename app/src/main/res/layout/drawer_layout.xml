@@ -54,7 +54,7 @@
         android:textColor="#ffffff"
         android:onClick="clickDrawer"
         android:text="   Carrito de compras"/>
-  
+
     <TextView
         android:id="@+id/presupuesto"
         android:layout_width="match_parent"
