@@ -23,18 +23,6 @@ public class RegisterActivity extends AppCompatActivity {
     String newNombreCompleto;
     String newNumeroTelefono;
 
-    String emailValue;
-    String contrasenaValue;
-    String direccionValue;
-    String nombreCompletoValue;
-    String numeroTelefonoValue;
-//    String[] validEmail = {"pixies@gmail.com"};
-//    String[] validContrasena = {"123456"};
-//    String[] validDireccion = {"UPB"};
-//    String[] validNombreCompleto = {"Pixies"};
-//    String[] validNumeroTelefono = {"79540265"};
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
@@ -51,11 +39,11 @@ public class RegisterActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 SharedPreferences preferences = getSharedPreferences("MYPREFS", MODE_PRIVATE);
-                newEmail = editTextEmail.getText().toString();
-                newContrasena = editTextContrasena.getText().toString();
-                newDireccion = editTextDireccion.getText().toString();
-                newNombreCompleto = editTextNombreCompleto.getText().toString();
-                newNumeroTelefono = editTextNumeroTelefono.getText().toString();
+                newEmail = String.valueOf(editTextEmail.getText());
+                newContrasena = String.valueOf(editTextContrasena.getText().toString());
+                newDireccion = String.valueOf(editTextDireccion.getText().toString());
+                newNombreCompleto = String.valueOf(editTextNombreCompleto.getText().toString());
+                newNumeroTelefono = String.valueOf(editTextNumeroTelefono.getText().toString());
 
                 SharedPreferences.Editor editor = preferences.edit();
                 editor.putString(newEmail + newContrasena + "data", newEmail + "/n"
@@ -68,29 +56,6 @@ public class RegisterActivity extends AppCompatActivity {
         });
 
     }
-
-//    public void clickButton(View view) {
-//        registrarse(view);
-//
-//    }
-//    public void registrarse(View view) {
-//        emailValue = String.valueOf(editTextEmail.getText());
-//        contrasenaValue = String.valueOf(editTextContrasena.getText());
-//        numeroTelefonoValue = String.valueOf(editTextNumeroTelefono.getText());
-//        direccionValue = String.valueOf(editTextDireccion.getText());
-//        nombreCompletoValue = String.valueOf(editTextNombreCompleto.getText());
-//
-//        for(int i = 0; i < validEmail.length ; i++) {
-//            if (emailValue.equals(validEmail[i]) && contrasenaValue.equals(validContrasena[i])
-//                    &&direccionValue.equals(validDireccion[i])&&numeroTelefonoValue.equals(validNumeroTelefono[i])
-//                    &&nombreCompletoValue.equals(validNombreCompleto[i])) {
-//                Intent intent = new Intent(this, MainActivity.class);
-//                startActivity(intent);
-//                return;
-//            }
-//        }
-//
-//        Toast.makeText(this, "Datos invalidos!", Toast.LENGTH_SHORT).show();
-    }
+}
 
 
