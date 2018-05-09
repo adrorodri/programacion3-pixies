@@ -9,17 +9,16 @@
         android:roundIcon="@mipmap/ic_launcher_foreground"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity" />
-        <activity android:name=".PresupuestoActivity"/>
-        <activity android:name=".CarritoActivity"/>
-        <activity android:name=".BienvenidosActivity"/>
-        <activity android:name=".ConfiguracionActivity"/>
-        <activity android:name=".ProductosActivity"/>
-        <activity android:name=".CustomDialog"/>
-        <activity android:name=".DrawerActivity" />
-        <activity android:name=".PerfilActivity" />
-        <activity android:name=".RegisterActivity" />
-        <activity android:name=".SplashScreen">
+        <activity android:name=".UI.Activities.MainActivity" />
+        <activity android:name=".UI.Activities.PresupuestoActivity"/>
+        <activity android:name=".UI.Activities.CarritoActivity"/>
+        <activity android:name=".UI.Activities.BienvenidosActivity"/>
+        <activity android:name=".UI.Activities.ConfiguracionActivity"/>
+        <activity android:name=".UI.Activities.ProductosActivity"/>
+        <activity android:name=".UI.Activities.DrawerActivity" />
+        <activity android:name=".UI.Activities.PerfilActivity" />
+        <activity android:name=".UI.Activities.RegisterActivity" />
+        <activity android:name=".UI.Activities.SplashScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

@@ -1,9 +1,10 @@
-package com.programacion3.pixies.app;
+package com.programacion3.pixies.app.Controler;
 
 import android.content.Context;
 import android.content.SharedPreferences;
 
 import com.google.gson.Gson;
+import com.programacion3.pixies.app.Model.Usuario;
 
 /**
  * Created by adro_ on 5/4/2018.

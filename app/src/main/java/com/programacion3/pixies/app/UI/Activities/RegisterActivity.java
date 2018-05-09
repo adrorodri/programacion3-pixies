@@ -1,14 +1,14 @@
-package com.programacion3.pixies.app;
+package com.programacion3.pixies.app.UI.Activities;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
-import android.provider.ContactsContract;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.Toast;
+
+import com.programacion3.pixies.app.R;
 
 public class RegisterActivity extends AppCompatActivity {
     EditText editTextEmail;
@@ -40,11 +40,11 @@ public class RegisterActivity extends AppCompatActivity {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
-        final EditText email = (EditText) findViewById(R.id.email);
-        final EditText contrasena = (EditText) findViewById(R.id.contrasena);
-        final EditText direccion = (EditText) findViewById(R.id.direccion);
-        final EditText nombreCompleto = (EditText) findViewById(R.id.nombrecompleto);
-        final EditText numeroTelefono = (EditText) findViewById(R.id.numerotelefono);
+        editTextEmail = (EditText) findViewById(R.id.email);
+        editTextContrasena = (EditText) findViewById(R.id.contrasena);
+        editTextDireccion = (EditText) findViewById(R.id.direccion);
+        editTextNombreCompleto = (EditText) findViewById(R.id.nombrecompleto);
+        editTextNumeroTelefono = (EditText) findViewById(R.id.numerotelefono);
         Button btnRegister  = (Button) findViewById(R.id.registrarse2);
 
         btnRegister.setOnClickListener(new View.OnClickListener() {

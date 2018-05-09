@@ -1,4 +1,4 @@
-package com.programacion3.pixies.app;
+package com.programacion3.pixies.app.UI.Activities;
 
 import android.app.Dialog;
 import android.content.Intent;
@@ -6,6 +6,9 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+
+import com.programacion3.pixies.app.R;
+import com.programacion3.pixies.app.Controler.SharedPreferencesController;
 
 public class ConfiguracionActivity extends DrawerActivity {
     TextView cerrar,deseas_cerrar;

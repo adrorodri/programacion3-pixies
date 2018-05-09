@@ -1,4 +1,4 @@
-package com.programacion3.pixies.app;
+package com.programacion3.pixies.app.UI.Adapters;
 
 import android.content.Context;
 import android.support.annotation.NonNull;
@@ -8,6 +8,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import com.programacion3.pixies.app.Model.Producto;
+import com.programacion3.pixies.app.R;
 
 import java.util.List;
 
@@ -19,10 +22,8 @@ public class CarritoAdapter extends RecyclerView.Adapter<CarritoAdapter.ViewHold
 
     private Context mContext;
     private List<Producto> productoList;
-    DBController dbController;
-    SharedPreferencesController sharedPreferences;
 
-    CarritoAdapter(Context context, List<Producto> list) {
+    public CarritoAdapter(Context context, List<Producto> list) {
         mContext = context;
         productoList = list;
     }

@@ -1,9 +1,11 @@
-package com.programacion3.pixies.app;
+package com.programacion3.pixies.app.UI.Activities;
 
 import android.content.Intent;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+
+import com.programacion3.pixies.app.R;
 
 public class SplashScreen extends AppCompatActivity {
 

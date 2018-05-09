@@ -1,16 +1,19 @@
-package com.programacion3.pixies.app;
+package com.programacion3.pixies.app.UI.Adapters;
 
 import android.content.Context;
 import android.support.annotation.NonNull;
-import android.support.v7.app.AlertDialog;
-import android.support.v7.widget.CardView;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
+
+import com.programacion3.pixies.app.Controler.DBController;
+import com.programacion3.pixies.app.Model.Producto;
+import com.programacion3.pixies.app.R;
+import com.programacion3.pixies.app.Controler.SharedPreferencesController;
 
 import java.util.List;
 
@@ -25,7 +28,7 @@ public class ProductosAdapter extends RecyclerView.Adapter<ProductosAdapter.View
     DBController dbController;
     SharedPreferencesController sharedPreferences;
 
-    ProductosAdapter(Context context, List<Producto> list) {
+    public ProductosAdapter(Context context, List<Producto> list) {
         mContext = context;
         productoList = list;
     }
@@ -56,6 +59,8 @@ public class ProductosAdapter extends RecyclerView.Adapter<ProductosAdapter.View
                         productoList.get(position).getPrecio(),
                         productoList.get(position).getNombre(),
                         sharedPreferences.getUsuario());
+                Toast.makeText(mContext, "Producto añadido al carrito", Toast.LENGTH_SHORT).show();
+
             }
         });
     }

@@ -1,10 +1,14 @@
-package com.programacion3.pixies.app;
+package com.programacion3.pixies.app.Controler;
 
 import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
+
+import com.programacion3.pixies.app.Model.Producto;
+import com.programacion3.pixies.app.R;
+
 import java.util.LinkedList;
 import java.util.List;
 
@@ -14,7 +18,7 @@ public class DBController extends SQLiteOpenHelper {
     String nombre = "Nesquick";
     String categoria = "Cereales";
     int precio = 30;
-    int cantidad = 10;
+    int cantidad = 5;
     int imagen = R.drawable.cereal_nesquick;
     String nombre2 = "Cornflex";
     String categoria2 = "Cereales";
@@ -24,39 +28,39 @@ public class DBController extends SQLiteOpenHelper {
     String nombre3 = "Reeses";
     String categoria3 = "Cereales";
     int precio3 = 30;
-    int cantidad3 = 10;
+    int cantidad3 = 18;
     int imagen3 = R.drawable.cereal_reeses;
-    String nombre4 = "Chocapic";
+    String nombre4 = "Trix";
     String categoria4 = "Cereales";
     int precio4 = 15;
-    int cantidad4 = 10;
+    int cantidad4 = 13;
     int imagen4 = R.drawable.cereal_trix;
     String nombre5 = "Minis";
     String categoria5 = "Cereales";
     int precio5 = 20;
-    int cantidad5 = 10;
+    int cantidad5 = 6;
     int imagen5 = R.drawable.cereal_minis;
 
     //Lacteos
     String nombre6 = "Bonle";
     String categoria6 = "Lacteos";
     int precio6 = 30;
-    int cantidad6 = 10;
+    int cantidad6 = 5;
     int imagen6 = R.drawable.lacteos_bonle;
     String nombre7 = "Chicolac";
     String categoria7 = "Lacteos";
     int precio7 = 20;
-    int cantidad7= 10;
+    int cantidad7= 100;
     int imagen7 = R.drawable.lacteos_chicolac;
     String nombre8 = "Gloria";
     String categoria8 = "Lacteos";
     int precio8 = 30;
-    int cantidad8 = 10;
+    int cantidad8 = 20;
     int imagen8 = R.drawable.lacteos_gloria;
     String nombre9 = "Silk";
     String categoria9 = "Lacteos";
     int precio9 = 15;
-    int cantidad9 = 10;
+    int cantidad9 = 16;
     int imagen9 = R.drawable.lacteos_silk;
     String nombre10= "Yogurt";
     String categoria10 = "Lacteos";
@@ -68,54 +72,54 @@ public class DBController extends SQLiteOpenHelper {
     String nombre11 = "Fanta";
     String categoria11 = "Bebidas";
     int precio11 = 30;
-    int cantidad11 = 10;
+    int cantidad11 = 100;
     int imagen11 = R.drawable.bebida_fanta;
     String nombre12 = "Sprite";
     String categoria12 = "Bebidas";
     int precio12 = 20;
-    int cantidad12 = 10;
+    int cantidad12 = 80;
     int imagen12 = R.drawable.bebida_sprite;
     String nombre13 = "Jugo DelValle";
     String categoria13 = "Bebidas";
     int precio13 = 30;
-    int cantidad13 = 10;
+    int cantidad13 = 60;
     int imagen13 = R.drawable.bebida_valle;
     String nombre14 = "Agua Vital";
     String categoria14 = "Bebidas";
     int precio14 = 15;
-    int cantidad14 = 10;
+    int cantidad14 = 90;
     int imagen14 = R.drawable.bebida_vital;
     String nombre15 = "Coca-Cola";
     String categoria15 = "Bebidas";
     int precio15 = 20;
-    int cantidad15 = 10;
+    int cantidad15 = 58;
     int imagen15 = R.drawable.bebidas_coca;
 
     //Panaderia
     String nombre16 = "Bimbo";
     String categoria16 = "Panaderia";
     int precio16 = 30;
-    int cantidad16 = 10;
+    int cantidad16 = 200;
     int imagen16 = R.drawable.panaderia_bimbo;
     String nombre17 = "Croissant";
     String categoria17 = "Panaderia";
     int precio17 = 20;
-    int cantidad17= 10;
+    int cantidad17= 150;
     int imagen17 = R.drawable.panaderia_croissant;
-    String nombre18 = "Pan Hamburguesa";
+    String nombre18 = "Pan";
     String categoria18 = "Panaderia";
     int precio18 = 30;
-    int cantidad18 = 10;
+    int cantidad18 = 120;
     int imagen18 = R.drawable.panaderia_hamburguesa;
     String nombre19 = "Baguette";
     String categoria19 = "Panaderia";
     int precio19 = 15;
-    int cantidad19 = 10;
+    int cantidad19 = 100;
     int imagen19 = R.drawable.panaderia_panbaguette;
     String nombre20= "Pan de Leche";
     String categoria20 = "Panaderia";
     int precio20 = 20;
-    int cantidad20 = 10;
+    int cantidad20 = 130;
     int imagen20 = R.drawable.panaderia_panleche;
 
     //Aseo
@@ -127,14 +131,14 @@ public class DBController extends SQLiteOpenHelper {
     String nombre22 = "Colgate";
     String categoria22 = "Aseo";
     int precio22 = 20;
-    int cantidad22 = 10;
+    int cantidad22 = 30;
     int imagen22 = R.drawable.aseo_colgate;
     String nombre23 = "Dove";
     String categoria23 = "Aseo";
     int precio23 = 30;
-    int cantidad23 = 10;
+    int cantidad23 = 20;
     int imagen23 = R.drawable.aseo_dove;
-    String nombre24 = "Head&Shoulders";
+    String nombre24 = "Shampoo H&S";
     String categoria24 = "Aseo";
     int precio24 = 15;
     int cantidad24 = 10;
@@ -142,7 +146,7 @@ public class DBController extends SQLiteOpenHelper {
     String nombre25 = "Scott";
     String categoria25 = "Aseo";
     int precio25 = 20;
-    int cantidad25 = 10;
+    int cantidad25 = 100;
     int imagen25 = R.drawable.aseo_scott;
 
 

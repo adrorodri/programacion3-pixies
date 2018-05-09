@@ -1,4 +1,4 @@
-package com.programacion3.pixies.app;
+package com.programacion3.pixies.app.Model;
 
 public class Producto {
     private int image;

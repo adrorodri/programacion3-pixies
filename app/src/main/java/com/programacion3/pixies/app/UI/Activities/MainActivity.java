@@ -1,14 +1,15 @@
-package com.programacion3.pixies.app;
+package com.programacion3.pixies.app.UI.Activities;
 
-import android.app.Activity;
 import android.content.Intent;
-import android.content.SharedPreferences;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
+
+import com.programacion3.pixies.app.R;
+import com.programacion3.pixies.app.Controler.SharedPreferencesController;
+import com.programacion3.pixies.app.Model.Usuario;
 
 public class MainActivity extends AppCompatActivity {
 

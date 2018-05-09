@@ -1,10 +1,11 @@
-package com.programacion3.pixies.app;
+package com.programacion3.pixies.app.UI.Activities;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-import java.util.Locale;
+import com.programacion3.pixies.app.Controler.DBController;
+import com.programacion3.pixies.app.R;
 
 /**
  * Created by Mateo on 01/05/2018.

@@ -1,6 +1,8 @@
-package com.programacion3.pixies.app;
+package com.programacion3.pixies.app.UI.Activities;
 
 import android.os.Bundle;
+
+import com.programacion3.pixies.app.R;
 
 public class PresupuestoActivity extends DrawerActivity {
 

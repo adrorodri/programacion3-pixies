@@ -1,11 +1,14 @@
-package com.programacion3.pixies.app;
+package com.programacion3.pixies.app.UI.Activities;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.view.View;
-import android.widget.ImageView;
+
+import com.programacion3.pixies.app.Controler.DBController;
+import com.programacion3.pixies.app.Model.Producto;
+import com.programacion3.pixies.app.UI.Adapters.ProductosAdapter;
+import com.programacion3.pixies.app.R;
 
 import java.util.List;
 
@@ -32,7 +35,6 @@ public class ProductosActivity extends DrawerActivity {
         productoList = dbController.getAllProducts();
         productoList = dbController.getAllProductsByCategory(categoryRecep);
 
-
         LinearLayoutManager layoutManager = new LinearLayoutManager(this);
         RecyclerView.LayoutManager rvLayoutManager = layoutManager;
 
@@ -42,9 +44,5 @@ public class ProductosActivity extends DrawerActivity {
         recyclerView.setAdapter(adapter);
     }
 
-    @Override
-    public void onBackPressed() {
-
-    }
 }
 

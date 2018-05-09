@@ -1,9 +1,11 @@
-package com.programacion3.pixies.app;
+package com.programacion3.pixies.app.UI.Activities;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+
+import com.programacion3.pixies.app.R;
 
 public class DrawerActivity extends AppCompatActivity {
     @Override
